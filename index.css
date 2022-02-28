@@ -214,6 +214,144 @@ footer .icp_num a{
 }
 
 
+/* Hack for mobile */
+
+@media only screen and (max-width: 768px) {
+
+    /* Main */
+    .content_right {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        max-height: 20em;
+        overflow: hidden;
+    }
+
+    .content_left {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .content_left .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .content_left .nav li {
+        width: 50%;
+        padding: .5em 0;
+        display: inline-block;
+    }
+
+    .avatar {
+        margin-top: -5em;
+    }
+
+    .avatar img{
+        max-width: 5em;
+    }
+
+    body {
+        padding: 0 1em 0 1em;
+    }
+
+    main {
+        width: 100%;
+        max-width: 22em;
+    }
+
+    main .content {
+        display: block;
+        margin: 5em 0 1em 0;
+        width: 100%;
+        height: 35em;
+        overflow: visible;
+    }
+
+    footer {
+        margin-bottom: 1em;
+    }
+
+    /* Sections */
+    #content_home h1 {
+        margin-top: .5em;
+        font-size: 2.5em;
+    }
+
+    #content_home p {
+        margin-top: 2em;
+    }
+
+    #content_archives h1 {
+        margin-top: .2em;
+        font-size: 1.5em;
+    }
+
+    #content_archives ul {
+        margin-top: .5em;
+    }
+
+    #content_archives a {
+        font-size: 75%;
+    }
+
+    #content_archives .meta {
+        font-size: 60%;
+    }
+
+    #content_contract h1 {
+        margin-top: .3em;
+        font-size: 2em;
+    }
+
+    #content_contract .get_contract {
+        margin-top: 1em;
+    }
+
+    #content_contract .get_contract a {
+        padding: .3em 0;
+    }
+
+    #content_contract .get_contract a i {
+        font-size: 2em;
+        margin-top: .2em;
+    }
+
+    #content_contract .get_contract a span {
+        margin-top: 1em;
+    }
+
+    #content_contract h1 {
+        margin-top: .3em;
+        font-size: 2em;
+    }
+
+    #content_donate .donate-img-box {
+        margin: .5em auto 1em auto;
+        max-width: 20em;
+        max-height: 15.5em;
+    }
+
+    #content_donate .donate-img-box img {
+        margin: .1em;
+        width: 40%;
+    }
+
+    #content_donate p {
+        margin-top: 1em;
+        font-size: 60%;
+    }
+}
+
+
+
+
 /* loading */
 
 #load_animation {
