@@ -206,6 +206,14 @@ main .content {
     margin-top: 3em;
 }
 
+footer .icp_num a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
 /* loading */
 
 #load_animation {
