@@ -82,7 +82,7 @@ function blobToDataURI(blob, callback) {
     }
     reader.readAsDataURL(blob);
 }
-var url = "bg.jpg";
+var url = "https://cdn.jsdelivr.net/gh/raobee/raoby.com/bg.jpg";
 var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
 xhr.responseType = "blob";
