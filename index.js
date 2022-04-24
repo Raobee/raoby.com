@@ -46,7 +46,6 @@ function getArchives() {
         error: function (){
             t+="<li>加载失败力QvQ</li>>";
             $('.recent_archives').html(t);
-            return;
         }
     })
 }
@@ -69,7 +68,7 @@ Date.prototype.Format = function (fmt) { //author: meizz
     };
     if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
     for (var k in o)
-        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
 }
 
@@ -87,12 +86,13 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
 xhr.responseType = "blob";
 xhr.onload = function () {
-    if (this.status == 200) {
+    if (this.status === 200) {
         var blob = this.response;
         blobToDataURI(blob, function (t) {
             $("body").css("background-image", "url('" + t + "')");
-            $("#background_small").addClass("smallBg");
-            $("#background_small").css("opacity", "0");
+            var DOM_bg = $("#background_small");
+            DOM_bg.addClass("smallBg");
+            DOM_bg.css("opacity", "0");
         });
     }
 }
