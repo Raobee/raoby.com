@@ -1,4 +1,4 @@
-const API_URL="https://www.raobee.com/api/"
+const BLOG_API_URL="https://www.raobee.com/api/"
 
 $(document).ready(function () {
     $("#load_animation").hide();
@@ -25,7 +25,7 @@ function getArchives() {
     let t = ``;
     $.ajax({
         type: "GET",
-        url: API_URL + "posts?pageSize=10",
+        url: BLOG_API_URL + "posts?pageSize=10",
         dataType: "json",
         success: function (json) {
             let dom = $('.recent_archives');
